@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO LOGITRANS</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/YW2dsJf.png" alt="Logo Empresa" class="img-logo">
+    </header>
+    <section>
+        <!-- Formulario de registro de usuario -->
+    <form id="loginForm" onsubmit="almacenarDatos(event)">
+        <label for="usuario" id="label-correo" >Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario"><br><br>
+
+        <label for="clave" id="label-correo" >Contraseña:</label>
+        <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña"><br><br>
+
+        <input type="submit" value="Guardar Datos" id="btn_ingresar">
+    </form>
+
+    <br>
+
+    <!-- Botón para mostrar los datos almacenados -->
+    <button onclick="mostrarDatosAlmacenados()" id="btn_registrar">Mostrar Datos Almacenados</button>
+
+    </section>
+    <footer>
+        <p>© Derechos reservados a <a href="">Juan Esteban Martinez Osorio</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

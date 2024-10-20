@@ -11,11 +11,11 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="Logo Empresa" class="img-logo">
+        <img src="https://i.imgur.com/YW2dsJf.png" alt="Logo Empresa" class="img-logo">
     </header>
     <section>
         <form action="">
-            <label for="form-email" id="label-correo">Correo electrónico</label>
+            <label for="form-email" id="label-correo">Usuario</label>
             <input type="email" name="form-email" id="form-email" placeholder="Ingrese su correo">
             <label for="form-password" id="label-contraseña">Contraseña</label>
             <input type="password" name="form-password" id="form-password" placeholder="Contraseña">
@@ -24,23 +24,46 @@
                 <input type="checkbox" name="form-recordar" id="form-recordar">
                 <label for="radio" id="label_recordar">Recordar usuario</label>
             </div>
-            <input type="button" value="Ingresar" id="btn_ingresar" onclick="btnAlerta()">
-            <input type="button" value="Registrar" id="btn_registrar" >
+            <input type="submit" value="Ingresar" id="btn_ingresar" onclick="btnAlerta()">
+            <input type="submit" value="Registrar" id="btn_registrar" onclick="btnRegistro()">
         </form>
     </section>
     <aside>
         <p>Inicia sesión con redes sociales</p>
         <article class="social-icons">
-            <img src="img/icons/facebook.png" alt="logo facebook" id="facebook">
-            <img src="img/icons/twitter.png" alt="logo twitter" id="twitter">
-            <img src="img/icons/linkedin.png" alt="logo linkedin" id="linkedin">
+            <img src="https://i.imgur.com/kPpfBO5.png" alt="logo facebook" id="facebook">
+            <img src="https://i.imgur.com/3CXQLHW.png" alt="logo twitter" id="twitter">
+            <img src="https://i.imgur.com/URKqUsu.png" alt="logo linkedin" id="linkedin">
         </article>
     </aside>
     <footer>
         <p>© Derechos reservados a <a href="">Juan Esteban Martinez Osorio</a></p>
     </footer>
 
-    <script
-     src="js/script.js"></script>
+<!-- Pop-up que aparecerá automáticamente 
+    <div id="miPopup" class="popup">
+        <div class="popup-contenido">
+            <span class="cerrar" onclick="ocultarPopup()">&times;</span>
+            <h2>¡Bienvenid@ a LOGI<span>TRANS</span>!</h2>
+            <h4>Estudiante: </h4>
+            <p>JUAN ESTEBAN MARTINEZ OSORIO</p>
+            <h4>Cedula: </h4>
+            <p>1192904155</p>
+            <h4>Ficha: </h4>
+            <p>2721533</p>
+-->
+            <!-- Datos Ingreso POP UP
+            <h2>Datos de ingreso LOGI<span>TRANS</span></h2>
+            <h4>USUARIO </h4>
+            <p>admin</p>
+            <h4>CONTRASEÑA </h4>
+            <p>admin</p>
+
+            <input type="button" value="Cerrar" id="btn_registrar" onclick="ocultarPopup()"">
+        </div>
+    </div>
+-->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
