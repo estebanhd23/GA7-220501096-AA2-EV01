@@ -1,18 +1,22 @@
-let usuarios = 
-{
-    nombre: "admin", 
-    contrasenaa: "admin"
-}
+// Función para validar el inicio de sesión
+function validarInicioSesion(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
-function btnAlerta()
-{
-    let usuario = document.getElementById('form-email');
-    let contrasena = document.getElementById('form-password');
-    if (usuario.value == usuarios.nombre && contrasena.value == usuarios.contrasenaa)
-    {
-         window.location="registrovalido.html";
-    }else{
-        alert("USUARIO Y/O CLAVE INVALIDO")
+    var usuarioIngresado = document.getElementById("usuario").value;
+    var claveIngresada = document.getElementById("clave").value;
+
+    // Recuperar los usuarios almacenados en localStorage
+    var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    // Buscar si existe un usuario con los datos ingresados
+    var usuarioEncontrado = usuarios.find(function(user) {
+        return user.usuario === usuarioIngresado && user.clave === claveIngresada;
+    });
+
+    if (usuarioEncontrado) {
+       window.location.href = "registrovalido.html";
+    } else {
+        alert("Usuario o contraseña incorrectos.");
     }
 }
 

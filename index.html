@@ -13,21 +13,23 @@
     <header>
         <img src="https://i.imgur.com/YW2dsJf.png" alt="Logo Empresa" class="img-logo">
     </header>
+
     <section>
-        <form action="">
-            <label for="form-email" id="label-correo">Usuario</label>
-            <input type="email" name="form-email" id="form-email" placeholder="Ingrese su correo">
-            <label for="form-password" id="label-contraseña">Contraseña</label>
-            <input type="password" name="form-password" id="form-password" placeholder="Contraseña">
+        <form id="loginForm" onsubmit="validarInicioSesion(event)">
+            <label for="usuario" id="label-correo">Usuario</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Ingrese su correo">
+            <label for="clave" id="label-contraseña">Contraseña</label>
+            <input type="password" name="clave" id="clave" placeholder="Contraseña">
 
             <div class="form-recordar">
                 <input type="checkbox" name="form-recordar" id="form-recordar">
                 <label for="radio" id="label_recordar">Recordar usuario</label>
             </div>
-            <input type="submit" value="Ingresar" id="btn_ingresar" onclick="btnAlerta()">
-            <input type="submit" value="Registrar" id="btn_registrar" onclick="btnRegistro()">
+            <input type="submit" value="Iniciar sesion" id="btn_ingresar" onclick="btnAlerta()">
         </form>
+        <input type="submit" value="Registrar" id="btn_registrar" onclick="btnRegistro()">
     </section>
+
     <aside>
         <p>Inicia sesión con redes sociales</p>
         <article class="social-icons">
